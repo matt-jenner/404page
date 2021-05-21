@@ -1,2 +1,2 @@
-# 404page
-A workspace to build a 404 page for my eventual site 
+# 404 Page
+A workspace to allow me to experiment with CSS and HTML to build 404 page for my eventual site.
