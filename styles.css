@@ -1,0 +1,139 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #010a01;
+  height: 100%;
+}
+
+.neonText {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f09,
+    0 0 82px #f09, 0 0 92px #f09, 0 0 102px #f09, 0 0 151px #f09;
+}
+
+h1,
+h2 {
+  font-size: 18px;
+  font-family: "Vibur", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  line-height: 0;
+}
+
+h1 {
+  font-size: 8rem;
+  animation: fallRight 1s ease-in 2.2s 1 normal forwards,
+    flicker 1.5s ease-in 3s infinite alternate;
+  transform-origin: right;
+}
+
+h2 {
+  font-size: 4rem;
+  transform-origin: left;
+  animation: fallLeft 1s ease-in 1s 1 normal forwards,
+    flicker 1.5s ease-in 3s infinite alternate;
+}
+
+.centerBox {
+  display: block;
+}
+
+.container {
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.pulsate {
+  animation: pulsate 0.11s ease-in-out infinite alternate;
+}
+
+@keyframes fallLeft {
+  0%,
+  87% {
+    transform: rotate(0deg);
+  }
+  89% {
+    transform: rotate(3deg);
+  }
+  90% {
+    transform: rotate(10deg);
+  }
+
+  91% {
+    transform: rotate(15deg);
+  }
+
+  93% {
+    transform: rotate(10deg);
+  }
+
+  94% {
+    transform: rotate(15deg);
+  }
+
+  96% {
+    transform: rotate(13deg);
+  }
+
+  100% {
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes fallRight {
+  0%,
+  87% {
+    transform: rotate(0deg);
+  }
+  89% {
+    transform: rotate(-3deg);
+  }
+  90% {
+    transform: rotate(-10deg);
+  }
+
+  91% {
+    transform: rotate(-15deg);
+  }
+
+  93% {
+    transform: rotate(-10deg);
+  }
+
+  94% {
+    transform: rotate(-15deg);
+  }
+
+  96% {
+    transform: rotate(-13deg);
+  }
+
+  100% {
+    transform: rotate(-15deg);
+  }
+}
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f09,
+      0 0 82px #f09, 0 0 92px #f09, 0 0 102px #f09, 0 0 151px #f09;
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
