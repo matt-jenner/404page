@@ -49,8 +49,11 @@ h2 {
   justify-content: center;
 }
 
-.pulsate {
-  animation: pulsate 0.11s ease-in-out infinite alternate;
+@media screen and (prefers-reduced-motion) {
+  h1,
+  h2 {
+    animation: none;
+  }
 }
 
 @keyframes fallLeft {
